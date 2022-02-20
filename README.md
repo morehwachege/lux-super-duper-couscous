@@ -1,2 +1,2 @@
 # lux-super-duper-couscous
-Lux Dev projects
+Lux Dev Python projects
