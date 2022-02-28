@@ -109,7 +109,7 @@
                             <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
                             <div class="card p-0">
                                 <!-- p-0 = padding: 0 -->
-                                <img src="assets/images/mosaic.jpg" class="img-fluid rounded-top" alt="...">
+                                <img src="{% static 'assets/images/mosaic.jpg' %}" class="img-fluid rounded-top" alt="...">
                                 <div class="content">
                                     <p class="text-muted">
                                         Subtitle that hooks the reader and prompts them to click on the read more
@@ -132,7 +132,7 @@
                             <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
                             <div class="card p-0">
                                 <!-- p-0 = padding: 0 -->
-                                <img src="assets/images/eugene.jpg" class="img-fluid rounded-top" alt="...">
+                                <img src="{% static 'assets/images/eugene.jpg' %}" class="img-fluid rounded-top" alt="...">
                                 <!-- rounded-top = rounded corners on the top -->
                                 <!-- Nested content container inside card -->
                                 <div class="content">
@@ -157,7 +157,7 @@
                             <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
                             <div class="card p-0">
                                 <!-- p-0 = padding: 0 -->
-                                <img src="assets/images/kyiv.jpg" class="img-fluid rounded-top" alt="...">
+                                <img src="{% static 'assets/images/kyiv.jpg' %}" class="img-fluid rounded-top" alt="...">
                                 <!-- rounded-top = rounded corners on the top -->
                                 <!-- Nested content container inside card -->
                                 <div class="content">
@@ -182,32 +182,7 @@
                             <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
                             <div class="card p-0">
                                 <!-- p-0 = padding: 0 -->
-                                <img src="assets/images/robert.jpg" class="img-fluid rounded-top" alt="...">
-                                <!-- rounded-top = rounded corners on the top -->
-                                <!-- Nested content container inside card -->
-                                <div class="content">
-                                    <p class="text-muted">
-                                        Subtitle that hooks the reader and prompts them to click on the read more
-                                        button.
-                                    </p>
-                                    <div class="text-right">
-                                        <!-- text-right = text-align: right -->
-                                        <a href="#" class="btn"> <i class='bx bxs-download'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end of card section -->
-
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
-
-                        <!-- start of card section -->
-                        <div class="w-400 mw-full">
-                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
-                            <div class="card p-0">
-                                <!-- p-0 = padding: 0 -->
-                                <img src="https://www.instagram.com/p/CY1ponpKPgh/?utm_source=ig_web_copy_link" class="img-fluid rounded-top" alt="...">
+                                <img src="{% static 'assets/images/robert.jpg' %}" class="img-fluid rounded-top" alt="...">
                                 <!-- rounded-top = rounded corners on the top -->
                                 <!-- Nested content container inside card -->
                                 <div class="content">
@@ -232,8 +207,8 @@
         
     </div>
     <!-- Halfmoon JS -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/halfmoon/js/halfmoon.js"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <script src="{% static 'assets/halfmoon/js/halfmoon.js' %}"></script>
 </body>
 
 </html>
