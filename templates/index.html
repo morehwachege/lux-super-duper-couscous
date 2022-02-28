@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -9,13 +10,13 @@
     <meta name="viewport" content="width=device-width" />
 
     <!-- Favicon and title -->
-    <link rel="icon" href="path/to/fav.png">
+    <link rel="icon" href="{% static 'path/to/fav.png' %}">
     <title>Starter template - Halfmoon</title>
 
     <!-- Halfmoon CSS -->
-    <link href="assets/halfmoon/css/halfmoon-variables.css" rel="stylesheet" />
+    <link href="{% static 'assets/halfmoon/css/halfmoon-variables.css' %}" rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <!--
     Or,
     Use the following (no variables, supports IE11):
@@ -42,14 +43,11 @@
         <nav class="navbar">
             <!-- Navbar brand -->
             <a href="#" class="navbar-brand ml-auto logo">
-                <img src="assets/images/instagram.png" alt="logo">
+                <img src="{% static 'assets/images/instagram.png' %}" alt="logo">
             </a>
             <!-- Navbar text -->
 
 
-
-            <!-- JavaScript -->
-            <script src="path/to/halfmoon.js"></script>
             <script type="text/javascript">
                 function toggleDark() {
                     halfmoon.toggleDarkMode();
@@ -202,32 +200,40 @@
                         <!-- end of card section -->
 
                     </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+
+                        <!-- start of card section -->
+                        <div class="w-400 mw-full">
+                            <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                            <div class="card p-0">
+                                <!-- p-0 = padding: 0 -->
+                                <img src="https://www.instagram.com/p/CY1ponpKPgh/?utm_source=ig_web_copy_link" class="img-fluid rounded-top" alt="...">
+                                <!-- rounded-top = rounded corners on the top -->
+                                <!-- Nested content container inside card -->
+                                <div class="content">
+                                    <p class="text-muted">
+                                        Subtitle that hooks the reader and prompts them to click on the read more
+                                        button.
+                                    </p>
+                                    <div class="text-right">
+                                        <!-- text-right = text-align: right -->
+                                        <a href="#" class="btn"> <i class='bx bxs-download'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of card section -->
+
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Content wrapper end -->
-
-        <!-- Navbar fixed bottom start -->
-        <nav class="navbar navbar-fixed-bottom">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        Help
-                    </a>
-                </li>
-            </ul>
-            <span class="navbar-text">
-                &copy; Copyright 2022, Muriithi Gakuru
-            </span>
-        </nav>
-        <!-- Navbar fixed bottom end -->
-
+        
     </div>
-    <!-- Page wrapper end -->
-
     <!-- Halfmoon JS -->
-    <script src="assets/halfmoon/js/halfmoon.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/halfmoon/js/halfmoon.js"></script>
 </body>
 
 </html>
