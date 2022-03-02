@@ -92,8 +92,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <form action="..." method="get" class="w-400 mw-full form-custom">
-                            <input type="text" class="form-control ml-autop-5"
+                        <form action="" method="get" class="w-400 mw-full form-custom">
+                            {% csrf_token %}
+                            <input type="url" id="url" name="home" class="form-control ml-autop-5"
                                 placeholder="Paste the link to search here">
                                 <!-- <input type="submit" value="Submit"> -->
                         </form>
